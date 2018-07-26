@@ -19,6 +19,8 @@
 		F868DA41210A2E7000F3E195 /* PlacesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F868DA40210A2E7000F3E195 /* PlacesTableViewController.swift */; };
 		F868DA43210A2E8B00F3E195 /* CreateNewPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F868DA42210A2E8B00F3E195 /* CreateNewPlaceViewController.swift */; };
 		F868DA45210A32B900F3E195 /* PlacesTable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F868DA44210A32B900F3E195 /* PlacesTable.storyboard */; };
+		F868DA47210A3AF300F3E195 /* PlacesTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F868DA46210A3AF300F3E195 /* PlacesTabBarViewController.swift */; };
+		F868DA49210A3BB900F3E195 /* PlacesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F868DA48210A3BB900F3E195 /* PlacesPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		F868DA40210A2E7000F3E195 /* PlacesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesTableViewController.swift; sourceTree = "<group>"; };
 		F868DA42210A2E8B00F3E195 /* CreateNewPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPlaceViewController.swift; sourceTree = "<group>"; };
 		F868DA44210A32B900F3E195 /* PlacesTable.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlacesTable.storyboard; sourceTree = "<group>"; };
+		F868DA46210A3AF300F3E195 /* PlacesTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesTabBarViewController.swift; sourceTree = "<group>"; };
+		F868DA48210A3BB900F3E195 /* PlacesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +56,6 @@
 		9DC8C27F210A1DAE00A4B391 = {
 			isa = PBXGroup;
 			children = (
-				F80EBCDB210A2B210008385E /* Models */,
-				F80EBCDA210A2B0B0008385E /* ModelControllers */,
 				9DC8C28A210A1DAE00A4B391 /* Places */,
 				9DC8C289210A1DAE00A4B391 /* Products */,
 			);
@@ -70,9 +72,12 @@
 		9DC8C28A210A1DAE00A4B391 /* Places */ = {
 			isa = PBXGroup;
 			children = (
+				F80EBCDB210A2B210008385E /* Models */,
+				F80EBCDA210A2B0B0008385E /* ModelControllers */,
 				9DC8C28B210A1DAE00A4B391 /* AppDelegate.swift */,
 				9DC8C2A7210A1F5000A4B391 /* View Controllers */,
 				9DC8C29D210A1DB500A4B391 /* Resources */,
+				F868DA48210A3BB900F3E195 /* PlacesPresenter.swift */,
 			);
 			path = Places;
 			sourceTree = "<group>";
@@ -105,6 +110,7 @@
 				F868DA3E210A2E5500F3E195 /* VisitedPlacesViewController.swift */,
 				F868DA40210A2E7000F3E195 /* PlacesTableViewController.swift */,
 				F868DA42210A2E8B00F3E195 /* CreateNewPlaceViewController.swift */,
+				F868DA46210A3AF300F3E195 /* PlacesTabBarViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -199,9 +205,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F80EBCD7210A2A4E0008385E /* Place.swift in Sources */,
+				F868DA49210A3BB900F3E195 /* PlacesPresenter.swift in Sources */,
 				F80EBCD9210A2AFE0008385E /* PlaceController.swift in Sources */,
 				9DC8C28C210A1DAE00A4B391 /* AppDelegate.swift in Sources */,
 				9DC8C2AD210A1F9F00A4B391 /* MapViewController.swift in Sources */,
+				F868DA47210A3AF300F3E195 /* PlacesTabBarViewController.swift in Sources */,
 				F868DA3F210A2E5500F3E195 /* VisitedPlacesViewController.swift in Sources */,
 				F868DA43210A2E8B00F3E195 /* CreateNewPlaceViewController.swift in Sources */,
 				F868DA41210A2E7000F3E195 /* PlacesTableViewController.swift in Sources */,
