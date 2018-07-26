@@ -8,13 +8,13 @@
 
 import UIKit
 
-class CreateNewPlaceViewController: UIViewController {
+class CreateNewPlaceViewController: UIViewController, PlacesPresenter {
 
     @IBAction func createNewPlace(_ sender: Any) {
         guard let name = nameTextField.text,
-        let latitudeString = latitudeTextField.text,
-        let longitudeString = longitudeTextField.text,
-        let latitude = Double(latitudeString),
+            let latitudeString = latitudeTextField.text,
+            let longitudeString = longitudeTextField.text,
+            let latitude = Double(latitudeString),
             let longitude = Double(longitudeString) else {
                 return
         }

@@ -15,6 +15,7 @@ protocol PlacesTableViewControllerDelegate: class {
 class PlacesTableViewController: UITableViewController, PlacesPresenter {
     
     // Refresh data when we appear or re-appear on screen
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
@@ -48,7 +49,11 @@ class PlacesTableViewController: UITableViewController, PlacesPresenter {
 
     // MARK: - Properties
     
-    var placeController: PlaceController?
+    var placeController: PlaceController? {
+        didSet {
+            tableView.reloadData()
+        }
+    }
     
     weak var delegate: PlacesTableViewControllerDelegate?
 }
